@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Estudo de caso do TaskManager, aplicação full stack desenvolvida por Djennifer Carvalho.">
+  <meta name="theme-color" content="#2B2C30">
+  <title>TaskManager — Estudo de caso | Djennifer Carvalho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="case-page">
+  <header class="case-header">
+    <div class="container">
+      <a class="brand" href="../../index.html" aria-label="Página inicial"><span>DJ</span><span class="brand-dot">.</span></a>
+      <a class="back-link" href="../../index.html#projetos"><span aria-hidden="true">←</span> Voltar aos projetos</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="container case-hero-grid">
+        <div>
+          <p class="case-kicker">Projeto 01 · Aplicação full stack</p>
+          <h1>TaskManager<span class="brand-dot">.</span></h1>
+          <p class="case-summary">Uma aplicação para organizar tarefas com experiência direta no front-end e uma API REST desenvolvida do zero com Node.js.</p>
+        </div>
+        <dl class="case-facts">
+          <div><dt>Ano</dt><dd>2026</dd></div>
+          <div><dt>Papel</dt><dd>Design e desenvolvimento full stack</dd></div>
+          <div><dt>Front-end</dt><dd>React 19 · Vite · CSS</dd></div>
+          <div><dt>Back-end</dt><dd>Node.js · API REST · JSON</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <figure class="case-cover">
+      <img src="../../Images/taskmanager-project.png" alt="Dashboard do TaskManager mostrando indicadores de progresso e organização de tarefas" width="1265" height="712">
+    </figure>
+
+    <div class="container case-content">
+      <section class="case-block">
+        <div class="case-block-title"><span>01 / Contexto</span><h2>Organização sem distrações.</h2></div>
+        <div class="case-block-copy">
+          <p class="lead">O objetivo foi transformar operações de CRUD em uma experiência simples, rápida e visualmente consistente.</p>
+          <p>O TaskManager permite criar, listar, pesquisar, editar, concluir e excluir tarefas. A interface acompanha o total de itens e tarefas concluídas, comunica estados vazios e mantém o usuário informado sobre a conexão com a API.</p>
+        </div>
+      </section>
+
+      <section class="case-block">
+        <div class="case-block-title"><span>02 / Funcionalidades</span><h2>Um fluxo completo.</h2></div>
+        <div class="case-block-copy">
+          <div class="case-feature-grid">
+            <article class="case-feature"><b>Gestão de tarefas</b><p>Criação, edição, conclusão e exclusão em uma única interface.</p></article>
+            <article class="case-feature"><b>Busca em tempo real</b><p>Consulta à API por título conforme o conteúdo pesquisado.</p></article>
+            <article class="case-feature"><b>Indicadores</b><p>Contadores de tarefas exibidas e atividades concluídas.</p></article>
+            <article class="case-feature"><b>Estados da interface</b><p>Feedback de carregamento, erro, API online e lista vazia.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-block">
+        <div class="case-block-title"><span>03 / Arquitetura</span><h2>Front-end e API conectados.</h2></div>
+        <div class="case-block-copy">
+          <p class="lead">A interface React consome uma API REST organizada em rotas, controllers, repository e camada de persistência.</p>
+          <p>O servidor utiliza os módulos nativos do Node.js, incluindo HTTP, crypto e acesso assíncrono ao sistema de arquivos. A comunicação cobre métodos GET, POST, PUT, PATCH e DELETE com suporte a CORS.</p>
+          <ul class="case-stack"><li>React 19</li><li>Vite 8</li><li>JavaScript</li><li>Node.js</li><li>REST</li><li>CORS</li><li>JSON</li><li>Vercel</li><li>Render</li></ul>
+        </div>
+      </section>
+
+      <section class="case-block">
+        <div class="case-block-title"><span>04 / Aprendizados</span><h2>O que esse projeto consolidou.</h2></div>
+        <div class="case-block-copy">
+          <ul class="case-learning-list">
+            <li>Integração completa entre uma interface React e uma API publicada.</li>
+            <li>Separação de responsabilidades no back-end por camadas.</li>
+            <li>Validação de dados, códigos HTTP e tratamento de erros.</li>
+            <li>Deploy independente do front-end e do servidor.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <section class="case-cta">
+    <div class="container case-cta-content">
+      <h2>Veja o projeto funcionando.</h2>
+      <div class="case-cta-actions">
+        <a class="button button-primary" href="https://tasks-front-seven.vercel.app" target="_blank" rel="noopener noreferrer">Abrir aplicação <span>↗</span></a>
+        <a class="button button-outline" href="https://github.com/taaehy/tasks-front" target="_blank" rel="noopener noreferrer">Ver código <span>↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="case-footer"><div class="container"><span>© 2026 Djennifer Carvalho</span><a href="../chargin/">Próximo projeto: CHARGin →</a></div></footer>
+</body>
+</html>
