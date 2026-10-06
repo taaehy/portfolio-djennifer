@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Estudo de caso do Lume, plataforma de gestão de qualidade de software desenvolvida por Djennifer Carvalho.">
+  <meta name="theme-color" content="#2B2C30">
+  <title>Lume — Estudo de caso | Djennifer Carvalho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="case-page">
+  <header class="case-header">
+    <div class="container">
+      <a class="brand" href="../../index.html" aria-label="Página inicial"><span>DJ</span><span class="brand-dot">.</span></a>
+      <a class="back-link" href="../../index.html#projetos"><span aria-hidden="true">←</span> Voltar aos projetos</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="container case-hero-grid">
+        <div>
+          <p class="case-kicker">Projeto 03 · Plataforma full stack</p>
+          <h1>Lume<span class="brand-dot">.</span></h1>
+          <p class="case-summary">Gestão de qualidade de software em um fluxo único para acompanhar bugs, registrar testes e avaliar releases com mais clareza.</p>
+        </div>
+        <dl class="case-facts">
+          <div><dt>Ano</dt><dd>2026</dd></div>
+          <div><dt>Papel</dt><dd>Design e desenvolvimento full stack</dd></div>
+          <div><dt>Framework</dt><dd>Next.js · React</dd></div>
+          <div><dt>Dados</dt><dd>Prisma · PostgreSQL</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <figure class="case-cover">
+      <img src="../../Images/lume-project.png" alt="Quadro Kanban do Lume com bugs distribuídos entre investigação, desenvolvimento e pronto para QA" width="1440" height="900">
+    </figure>
+
+    <div class="container case-content">
+      <section class="case-block">
+        <div class="case-block-title"><span>01 / Contexto</span><h2>Qualidade sem informação dispersa.</h2></div>
+        <div class="case-block-copy">
+          <p class="lead">O Lume reúne o trabalho de qualidade em um espaço compartilhado, do primeiro bug à decisão de liberar uma versão.</p>
+          <p>A plataforma foi criada para reduzir a fragmentação entre anotações, evidências e status. Com autenticação por e-mail e senha, cada pessoa acessa um ambiente responsivo onde o histórico do produto permanece organizado e consultável.</p>
+        </div>
+      </section>
+
+      <section class="case-block">
+        <div class="case-block-title"><span>02 / Fluxo</span><h2>Do problema à release.</h2></div>
+        <div class="case-block-copy">
+          <div class="case-feature-grid">
+            <article class="case-feature"><b>Kanban de bugs</b><p>Os itens avançam por etapas visíveis, com prioridade, responsável e regras de transição.</p></article>
+            <article class="case-feature"><b>Registro de testes</b><p>Execuções, resultados e evidências ficam associados ao contexto que precisam validar.</p></article>
+            <article class="case-feature"><b>Avaliação de releases</b><p>Indicadores e critérios de prontidão apoiam a decisão antes de cada publicação.</p></article>
+            <article class="case-feature"><b>Evidências privadas</b><p>Anexos permanecem protegidos e vinculados aos registros de qualidade correspondentes.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-block">
+        <div class="case-block-title"><span>03 / Arquitetura</span><h2>Produto e API na mesma base.</h2></div>
+        <div class="case-block-copy">
+          <p class="lead">A aplicação combina uma interface tipada, API própria e persistência relacional para manter o fluxo consistente.</p>
+          <p>Next.js e React sustentam a experiência responsiva; Prisma organiza o acesso ao PostgreSQL hospedado na Neon. Os anexos privados usam Vercel Blob, os testes automatizados usam Vitest e a aplicação é publicada na Vercel.</p>
+          <ul class="case-stack"><li>Next.js</li><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>Prisma</li><li>PostgreSQL</li><li>Vitest</li><li>Neon</li><li>Vercel Blob</li><li>Vercel</li></ul>
+        </div>
+      </section>
+
+      <section class="case-block">
+        <div class="case-block-title"><span>04 / Decisões</span><h2>O que tornou o fluxo confiável.</h2></div>
+        <div class="case-block-copy">
+          <ul class="case-learning-list">
+            <li>Estados e transições explícitos para preservar o histórico de cada bug.</li>
+            <li>Relacionamento entre testes, evidências e releases no mesmo domínio.</li>
+            <li>Autenticação por e-mail e senha integrada às permissões da aplicação.</li>
+            <li>Testes automatizados da base de código com Vitest.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <section class="case-cta">
+    <div class="container case-cta-content">
+      <h2>Conheça o Lume em funcionamento.</h2>
+      <div class="case-cta-actions">
+        <a class="button button-primary" href="https://lume-ecru-two.vercel.app" target="_blank" rel="noopener noreferrer">Ver projeto <span>↗</span></a>
+        <a class="button button-outline" href="https://github.com/taaehy/lume" target="_blank" rel="noopener noreferrer">Código no GitHub <span>↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="case-footer"><div class="container"><span>© 2026 Djennifer Carvalho</span><a href="../chargin/">← Projeto anterior: CHARGin</a></div></footer>
+</body>
+</html>
